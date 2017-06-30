@@ -1,0 +1,355 @@
+7fe153041700: returning; I want capability 0
+7fe153041700: resuming capability 0
+7fe153041700: cap 0: running thread 3 (ThreadRunGHC)
+7fe153041700: cap 0: thread 3 stopped (suspended while making a foreign call)
+7fe153041700: freeing capability 0
+7fe153041700: returning; I want capability 0
+7fe153041700: resuming capability 0
+7fe153041700: cap 0: running thread 3 (ThreadRunGHC)
+7fe153041700: cap 0: created thread 533
+7fe153041700: cap 0: thread 3 stopped (suspended while making a foreign call)
+7fe153041700: passing capability 0 to worker 0x7fe0d5ffb700
+7fe0d5ffb700: woken up on capability 0
+7fe0d5ffb700: resuming capability 0
+7fe0d5ffb700: cap 0: running thread 533 (ThreadRunGHC)
+7fe0d5ffb700: cap 0: throwTo: from thread 533 to thread 4
+        thread    4 @ 0x4200026630 is blocked on an MVar @ 0x4200026578
+7fe0d5ffb700: cap 0: raising exception in thread 4.
+7fe0d5ffb700: cap 0: thread 533 stopped (finished)
+7fe0d5ffb700: giving up capability 0
+7fe0d5ffb700: passing capability 0 to bound task 0x7fe1553be740
+7fe1553be740: woken up on capability 0
+7fe1553be740: resuming capability 0
+7fe1553be740: cap 0: running thread 4 (ThreadRunGHC)
+7fe1553be740: cap 0: thread 4 stopped (yielding)
+7fe1553be740: cap 0: running thread 4 (ThreadRunGHC)
+7fe1553be740: cap 0: thread 4 stopped (suspended while making a foreign call)
+7fe1553be740: freeing capability 0
+7fe1553be740: new task (taskCount: 59)
+7fe1553be740: returning; I want capability 0
+7fe1553be740: resuming capability 0
+7fe1553be740: cap 0: created thread 534
+7fe1553be740: new bound thread (534)
+7fe1553be740: cap 0: schedule()
+7fe1553be740: cap 0: running thread 534 (ThreadRunGHC)
+7fe1553be740: cap 0: thread 534 stopped (finished)
+7fe1553be740: bound thread (534) finished
+7fe1553be740: freeing capability 0
+7fe1553be740: task exiting
+7fe153041700: returning; I want capability 0
+7fe153842700: returning; I want capability 0
+7fe153041700: resuming capability 0
+7fe153041700: cap 0: running thread 3 (ThreadRunGHC)
+7fe153041700: cap 0: thread 3 stopped (finished)
+7fe153041700: giving up capability 0
+7fe153041700: passing capability 0 to worker 0x7fe153842700
+7fe153842700: resuming capability 0
+7fe153842700: cap 0: running thread 2 (ThreadRunGHC)
+7fe153842700: cap 0: thread 2 stopped (finished)
+7fe153842700: giving up capability 0
+7fe153842700: freeing capability 0
+7fe1553be740: new task (taskCount: 59)
+7fe1553be740: returning; I want capability 0
+7fe1553be740: resuming capability 0
+7fe1553be740: cap 0: requesting sequential GC
+7fe1553be740: grabbing all the capabilies (0/1)
+all threads:
+threads on capability 0:
+other threads:
+        thread  105 @ 0x42000062d0 is blocked on an external call
+        thread  104 @ 0x42000260f0 is blocked on an external call
+        thread  103 @ 0x42000060f0 is blocked on an external call
+        thread  102 @ 0x4200026168 is blocked on an external call
+        thread  101 @ 0x4200006000 is blocked on an external call
+        thread  100 @ 0x42000262d0 is blocked on an external call
+        thread   14 @ 0x4200026348 is blocked on an external call
+        thread   13 @ 0x4200006078 is blocked on an external call
+        thread   12 @ 0x4200006258 is blocked on an external call
+        thread   11 @ 0x4200026078 is blocked on an external call
+        thread   10 @ 0x42000061e0 is blocked on an external call
+        thread    9 @ 0x4200006348 is blocked on an external call
+        thread    8 @ 0x42000261e0 is blocked on an external call
+        thread    7 @ 0x42000063c0 is blocked on an external call
+        thread    6 @ 0x4200006168 is blocked on an external call
+        thread    5 @ 0x4200026258 is blocked on an external call
+        thread    4 @ 0x4200026630 is blocked on an external call (TSO_DIRTY)
+7fe1553be740: deleting all threads
+7fe1553be740: cap 0: starting GC
+7fe1553be740: cap 0: GC working
+7fe1553be740: cap 0: GC idle
+7fe1553be740: cap 0: GC done
+7fe1553be740: cap 0: GC idle
+7fe1553be740: cap 0: GC done
+7fe1553be740: cap 0: GC idle
+7fe1553be740: cap 0: GC done
+7fe1553be740: cap 0: all caps stopped for GC
+7fe1553be740: cap 0: finished GC
+7fe1553be740: passing capability 0 to worker 0x7fe153842700
+7fe1553be740: shutting down capability 0, attempt 0
+7fe1553be740: runnable threads or workers still alive, yielding
+7fe1553be740: passing capability 0 to worker 0x7fe153842700
+7fe153842700: woken up on capability 0
+7fe1553be740: shutting down capability 0, attempt 1
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 2
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 3
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 4
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 5
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 6
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 7
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 8
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 9
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 10
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 11
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 12
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 13
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 14
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 15
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 16
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 17
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 18
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 19
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 20
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 21
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 22
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 23
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 24
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 25
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 26
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 27
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 28
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 29
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 30
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 31
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 32
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 33
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 34
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 35
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 36
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 37
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 38
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 39
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 40
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 41
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 42
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 43
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 44
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 45
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 46
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 47
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 48
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 49
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 50
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 51
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 52
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 53
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 54
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 55
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 56
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 57
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 58
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 59
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 60
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 61
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 62
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 63
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 64
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 65
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 66
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 67
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 68
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 69
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 70
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 71
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 72
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 73
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 74
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 75
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 76
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 77
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 78
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 79
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 80
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 81
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 82
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 83
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 84
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 85
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 86
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 87
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 88
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 89
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 90
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 91
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 92
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 93
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 94
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 95
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 96
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 97
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 98
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 99
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 100
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 101
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 102
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 103
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 104
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 105
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 106
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 107
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 108
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 109
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 110
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 111
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 112
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 113
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 114
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 115
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 116
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 117
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 118
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 119
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 120
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 121
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 122
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 123
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 124
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 125
+7fe153842700: resuming capability 0
+7fe153842700: SCHED_SHUTTING_DOWN
+7fe153842700: passing capability 0 to worker 0x7fe153041700
+7fe153041700: woken up on capability 0
+7fe153041700: resuming capability 0
+7fe153041700: SCHED_SHUTTING_DOWN
+7fe153041700: passing capability 0 to worker 0x7fe0d5ffb700
+7fe0d5ffb700: woken up on capability 0
+7fe0d5ffb700: resuming capability 0
+7fe0d5ffb700: SCHED_SHUTTING_DOWN
+7fe0d5ffb700: freeing capability 0
+7fe1553be740: not owner, yielding
+7fe1553be740: shutting down capability 0, attempt 126
+7fe1553be740: task exiting
+7fe1553be740: freeing task manager, 17 tasks still running
