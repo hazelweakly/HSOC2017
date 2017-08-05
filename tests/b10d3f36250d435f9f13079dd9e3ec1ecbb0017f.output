@@ -1,0 +1,867 @@
+PYTHON="python3" "python3" ../driver/runtests.py  -e ghc_compiler_always_flags="'-dcore-lint -dcmm-lint -no-user-package-db -rtsopts  -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output'" -e config.compiler_debugged=False -e ghc_with_native_codegen=1 -e config.have_vanilla=True -e config.have_dynamic=True -e config.have_profiling=False -e ghc_with_threaded_rts=1 -e ghc_with_dynamic_rts=1 -e config.have_interp=True -e config.unregisterised=False -e config.ghc_dynamic_by_default=False -e config.ghc_dynamic=True -e ghc_with_smp=1 -e ghc_with_llvm=0 -e windows=False -e darwin=False -e config.in_tree_compiler=True --threads=4 --only-perf-tests --use-git-notes -e config.cleanup=True -e config.local=True --rootdir=. --configfile=../config/ghc -e 'config.confdir="../config"' -e 'config.platform="x86_64-unknown-linux"' -e 'config.os="linux"' -e 'config.arch="x86_64"' -e 'config.wordsize="64"' -e 'config.timeout=int() or config.timeout' -e 'config.exeext=""' -e 'config.top="/home/jaredweakly/Code/ghc/testsuite"' --config 'compiler="/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2"' --config 'ghc_pkg="/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-pkg"' --config 'haddock="/home/jaredweakly/Code/ghc/inplace/test   spaces/haddock"' --config 'hp2ps="/home/jaredweakly/Code/ghc/inplace/test   spaces/hp2ps"' --config 'hpc="/home/jaredweakly/Code/ghc/inplace/test   spaces/hpc"' --config 'gs="gs"' --config 'timeout_prog="../timeout/install-inplace/bin/timeout"' -e "config.stage=2"   --rootdir=../../libraries/array/tests  --rootdir=../../libraries/base/tests  --rootdir=../../libraries/binary/tests  --rootdir=../../libraries/bytestring/tests  --rootdir=../../libraries/containers/tests  --rootdir=../../libraries/deepseq/tests  --rootdir=../../libraries/directory/tests  --rootdir=../../libraries/filepath/tests  --rootdir=../../libraries/ghc-compact/tests  --rootdir=../../libraries/ghc-prim/tests  --rootdir=../../libraries/haskeline/tests  --rootdir=../../libraries/hpc/tests  --rootdir=../../libraries/parallel/tests  --rootdir=../../libraries/pretty/tests  --rootdir=../../libraries/process/tests  --rootdir=../../libraries/random/tests  --rootdir=../../libraries/stm/tests  --rootdir=../../libraries/template-haskell/tests  --rootdir=../../libraries/text/tests  --rootdir=../../libraries/unix/tests \
+	 \
+	 \
+	 \
+	 \
+	 \
+	 \
+	
+Timeout is 300
+Found 390 .T files...
+Beginning test run at Sat Aug  5 02:03:06 2017 PDT
+====> Scanning ./ado/all.T
+====> Scanning ./annotations/should_compile/all.T
+====> Scanning ./annotations/should_compile/th/all.T
+====> Scanning ./annotations/should_fail/all.T
+====> Scanning ./annotations/should_run/all.T
+====> Scanning ./array/should_run/all.T
+====> Scanning ./arrows/should_compile/all.T
+====> Scanning ./arrows/should_fail/all.T
+====> Scanning ./arrows/should_run/all.T
+====> Scanning ./backpack/cabal/bkpcabal01/all.T
+====> Scanning ./backpack/cabal/bkpcabal02/all.T
+====> Scanning ./backpack/cabal/bkpcabal03/all.T
+====> Scanning ./backpack/cabal/bkpcabal04/all.T
+====> Scanning ./backpack/cabal/bkpcabal05/all.T
+====> Scanning ./backpack/cabal/bkpcabal06/all.T
+====> Scanning ./backpack/cabal/bkpcabal07/all.T
+====> Scanning ./backpack/reexport/all.T
+====> Scanning ./backpack/should_compile/all.T
+====> Scanning ./backpack/should_fail/all.T
+====> Scanning ./backpack/should_run/all.T
+====> Scanning ./boxy/all.T
+====> Scanning ./cabal/all.T
+====> Scanning ./cabal/T12485/all.T
+====> Scanning ./cabal/T12733/all.T
+====> Scanning ./cabal/cabal01/all.T
+====> Scanning ./cabal/cabal03/all.T
+====> Scanning ./cabal/cabal04/all.T
+====> Scanning ./cabal/cabal05/all.T
+====> Scanning ./cabal/cabal06/all.T
+====> Scanning ./cabal/cabal08/all.T
+====> Scanning ./cabal/cabal09/all.T
+====> Scanning ./cabal/pkg02/all.T
+====> Scanning ./cabal/sigcabal01/all.T
+====> Scanning ./callarity/perf/all.T
+====> Scanning ./callarity/should_run/all.T
+====> Scanning ./callarity/unittest/all.T
+====> Scanning ./codeGen/should_compile/all.T
+====> Scanning ./codeGen/should_fail/all.T
+====> Scanning ./codeGen/should_gen_asm/all.T
+====> Scanning ./codeGen/should_run/all.T
+====> Scanning ./concurrent/T2317/all.T
+====> Scanning ./concurrent/prog001/all.T
+====> Scanning ./concurrent/prog002/all.T
+====> Scanning ./concurrent/prog003/all.T
+====> Scanning ./concurrent/should_run/all.T
+====> Scanning ./cpranal/should_compile/all.T
+====> Scanning ./cpranal/should_run/all.T
+====> Scanning ./cps/all.T
+====> Scanning ./deSugar/should_compile/all.T
+====> Scanning ./deSugar/should_fail/all.T
+====> Scanning ./deSugar/should_run/all.T
+====> Scanning ./dependent/ghci/all.T
+====> Scanning ./dependent/should_compile/all.T
+====> Scanning ./dependent/should_fail/all.T
+====> Scanning ./dependent/should_run/all.T
+====> Scanning ./deriving/perf/all.T
+====> Scanning ./deriving/should_compile/all.T
+====> Scanning ./deriving/should_fail/all.T
+====> Scanning ./deriving/should_run/all.T
+====> Scanning ./determinism/determ001/all.T
+====> Scanning ./determinism/determ002/all.T
+====> Scanning ./determinism/determ003/all.T
+====> Scanning ./determinism/determ004/all.T
+====> Scanning ./determinism/determ005/all.T
+====> Scanning ./determinism/determ006/all.T
+====> Scanning ./determinism/determ007/all.T
+====> Scanning ./determinism/determ008/all.T
+====> Scanning ./determinism/determ009/all.T
+====> Scanning ./determinism/determ010/all.T
+====> Scanning ./determinism/determ011/all.T
+====> Scanning ./determinism/determ012/all.T
+====> Scanning ./determinism/determ013/all.T
+====> Scanning ./determinism/determ014/all.T
+====> Scanning ./determinism/determ015/all.T
+====> Scanning ./determinism/determ016/all.T
+====> Scanning ./determinism/determ017/all.T
+====> Scanning ./determinism/determ018/all.T
+====> Scanning ./determinism/determ019/all.T
+====> Scanning ./determinism/determ021/all.T
+====> Scanning ./determinism/determ022/all.T
+====> Scanning ./dph/classes/dph-classes.T
+====> Scanning ./dph/diophantine/dph-diophantine.T
+====> Scanning ./dph/dotp/dph-dotp.T
+====> Scanning ./dph/enumfromto/dph-enumfromto.T
+====> Scanning ./dph/modules/dph-modules.T
+====> Scanning ./dph/nbody/dph-nbody.T
+====> Scanning ./dph/primespj/dph-primespj.T
+====> Scanning ./dph/quickhull/dph-quickhull.T
+====> Scanning ./dph/smvm/dph-smvm.T
+====> Scanning ./dph/sumnats/dph-sumnats.T
+====> Scanning ./dph/words/dph-words.T
+====> Scanning ./driver/all.T
+====> Scanning ./driver/T12062/all.T
+====> Scanning ./driver/T13392/all.T
+====> Scanning ./driver/T1372/all.T
+====> Scanning ./driver/T1959/test.T
+====> Scanning ./driver/T3007/all.T
+====> Scanning ./driver/T437/all.T
+====> Scanning ./driver/T5147/all.T
+====> Scanning ./driver/T7373/all.T
+====> Scanning ./driver/T7835/all.T
+====> Scanning ./driver/T8184/all.T
+====> Scanning ./driver/T8526/T8526.T
+====> Scanning ./driver/T8602/T8602.T
+====> Scanning ./driver/T9562/all.T
+====> Scanning ./driver/bug1677/all.T
+====> Scanning ./driver/conflicting_flags/test.T
+====> Scanning ./driver/dynamicToo/all.T
+====> Scanning ./driver/dynamicToo/dynamicToo001/test.T
+====> Scanning ./driver/dynamicToo/dynamicToo002/test.T
+====> Scanning ./driver/dynamicToo/dynamicToo004/test.T
+====> Scanning ./driver/dynamicToo/dynamicToo005/test.T
+====> Scanning ./driver/dynamic_flags_001/all.T
+====> Scanning ./driver/dynamic_flags_002/all.T
+====> Scanning ./driver/linkwhole/all.T
+====> Scanning ./driver/objc/all.T
+====> Scanning ./driver/recomp001/all.T
+====> Scanning ./driver/recomp002/all.T
+====> Scanning ./driver/recomp003/all.T
+====> Scanning ./driver/recomp004/all.T
+====> Scanning ./driver/recomp005/all.T
+====> Scanning ./driver/recomp006/all.T
+====> Scanning ./driver/recomp007/all.T
+====> Scanning ./driver/recomp008/all.T
+====> Scanning ./driver/recomp009/all.T
+====> Scanning ./driver/recomp010/all.T
+====> Scanning ./driver/recomp011/all.T
+====> Scanning ./driver/recomp012/all.T
+====> Scanning ./driver/recomp013/all.T
+====> Scanning ./driver/recomp015/all.T
+====> Scanning ./driver/recomp016/all.T
+====> Scanning ./driver/recomp017/all.T
+====> Scanning ./driver/retc001/all.T
+====> Scanning ./driver/retc002/all.T
+====> Scanning ./driver/retc003/all.T
+====> Scanning ./driver/should_fail/all.T
+====> Scanning ./dynlibs/all.T
+====> Scanning ./ffi/should_compile/all.T
+====> Scanning ./ffi/should_fail/all.T
+====> Scanning ./ffi/should_run/all.T
+====> Scanning ./gadt/all.T
+====> Scanning ./generics/all.T
+====> Scanning ./generics/GEq/test.T
+====> Scanning ./generics/GFunctor/test.T
+====> Scanning ./generics/GMap/test.T
+====> Scanning ./generics/GShow/test.T
+====> Scanning ./generics/T10604/all.T
+====> Scanning ./generics/Uniplate/test.T
+====> Scanning ./ghc-api/all.T
+====> Scanning ./ghc-api/T10052/all.T
+====> Scanning ./ghc-api/T4891/all.T
+====> Scanning ./ghc-api/T7478/all.T
+====> Scanning ./ghc-api/annotations/all.T
+====> Scanning ./ghc-api/annotations-literals/all.T
+====> Scanning ./ghc-api/apirecomp001/all.T
+====> Scanning ./ghc-api/dynCompileExpr/all.T
+====> Scanning ./ghc-api/show-srcspan/all.T
+====> Scanning ./ghc-e/should_fail/all.T
+====> Scanning ./ghc-e/should_run/all.T
+====> Scanning ./ghci/T11827/all.T
+====> Scanning ./ghci/linking/all.T
+====> Scanning ./ghci/linking/dyn/all.T
+====> Scanning ./ghci/prog001/prog001.T
+====> Scanning ./ghci/prog002/prog002.T
+====> Scanning ./ghci/prog003/prog003.T
+====> Scanning ./ghci/prog004/prog004.T
+====> Scanning ./ghci/prog005/prog005.T
+====> Scanning ./ghci/prog006/prog006.T
+====> Scanning ./ghci/prog007/prog007.T
+====> Scanning ./ghci/prog008/prog008.T
+====> Scanning ./ghci/prog009/ghci.prog009.T
+====> Scanning ./ghci/prog010/all.T
+====> Scanning ./ghci/prog011/prog011.T
+====> Scanning ./ghci/prog012/all.T
+====> Scanning ./ghci/prog013/prog013.T
+====> Scanning ./ghci/prog014/prog014.T
+====> Scanning ./ghci/prog015/prog015.T
+====> Scanning ./ghci/prog016/prog016.T
+====> Scanning ./ghci/prog017/prog017.T
+====> Scanning ./ghci/scripts/all.T
+====> Scanning ./ghci/should_fail/all.T
+====> Scanning ./ghci/should_run/all.T
+====> Scanning ./ghci.debugger/scripts/all.T
+====> Scanning ./ghci.debugger/scripts/break022/all.T
+====> Scanning ./ghci.debugger/scripts/break023/all.T
+====> Scanning ./haddock/haddock_examples/test.T
+====> Scanning ./haddock/should_compile_flag_haddock/all.T
+====> Scanning ./haddock/should_compile_flag_nohaddock/all.T
+====> Scanning ./haddock/should_compile_noflag_haddock/all.T
+====> Scanning ./haddock/should_compile_noflag_nohaddock/all.T
+====> Scanning ./haddock/should_fail_flag_haddock/all.T
+====> Scanning ./hpc/all.T
+====> Scanning ./hsc2hs/all.T
+====> Scanning ./indexed-types/should_compile/all.T
+====> Scanning ./indexed-types/should_compile/T13092b/all.T
+====> Scanning ./indexed-types/should_fail/all.T
+====> Scanning ./indexed-types/should_fail/T13092/all.T
+====> Scanning ./indexed-types/should_fail/T13092c/all.T
+====> Scanning ./indexed-types/should_fail/T13102/all.T
+====> Scanning ./indexed-types/should_run/all.T
+====> Scanning ./layout/all.T
+====> Scanning ./lib/integer/all.T
+====> Scanning ./llvm/should_compile/all.T
+====> Scanning ./llvm/should_run/subsections_via_symbols/all.T
+====> Scanning ./mdo/should_compile/all.T
+====> Scanning ./mdo/should_fail/all.T
+====> Scanning ./mdo/should_run/all.T
+====> Scanning ./module/all.T
+====> Scanning ./module/base01/all.T
+====> Scanning ./module/mod175/all.T
+====> Scanning ./monadfail/all.T
+====> Scanning ./numeric/should_compile/all.T
+====> Scanning ./numeric/should_run/all.T
+====> Scanning ./overloadedlists/should_fail/all.T
+====> Scanning ./overloadedlists/should_run/all.T
+====> Scanning ./overloadedrecflds/ghci/all.T
+====> Scanning ./overloadedrecflds/should_compile/all.T
+====> Scanning ./overloadedrecflds/should_fail/all.T
+====> Scanning ./overloadedrecflds/should_run/all.T
+====> Scanning ./overloadedstrings/should_run/all.T
+====> Scanning ./package/all.T
+====> Scanning ./parser/prog001/test.T
+====> Scanning ./parser/should_compile/all.T
+====> Scanning ./parser/should_compile/T7476/all.T
+====> Scanning ./parser/should_fail/all.T
+====> Scanning ./parser/should_run/all.T
+====> Scanning ./parser/unicode/all.T
+====> Scanning ./partial-sigs/should_compile/all.T
+====> Scanning ./partial-sigs/should_fail/all.T
+====> Scanning ./partial-sigs/should_run/all.T
+====> Scanning ./patsyn/should_compile/all.T
+====> Scanning ./patsyn/should_compile/T13350/all.T
+====> Scanning ./patsyn/should_fail/all.T
+====> Scanning ./patsyn/should_run/all.T
+====> Scanning ./perf/compiler/all.T
+====> Scanning ./perf/haddock/all.T
+====> Scanning ./perf/join_points/all.T
+====> Scanning ./perf/should_run/all.T
+====> Scanning ./perf/space_leaks/all.T
+====> Scanning ./plugins/all.T
+====> Scanning ./pmcheck/complete_sigs/all.T
+====> Scanning ./pmcheck/should_compile/all.T
+====> Scanning ./polykinds/all.T
+====> Scanning ./primops/should_compile/all.T
+====> Scanning ./primops/should_run/all.T
+====> Scanning ./printer/all.T
+====> Scanning ./profiling/should_compile/all.T
+====> Scanning ./profiling/should_fail/all.T
+====> Scanning ./profiling/should_run/all.T
+====> Scanning ./programs/10queens/test.T
+====> Scanning ./programs/Queens/test.T
+====> Scanning ./programs/andre_monad/test.T
+====> Scanning ./programs/andy_cherry/test.T
+====> Scanning ./programs/barton-mangler-bug/test.T
+====> Scanning ./programs/cholewo-eval/test.T
+====> Scanning ./programs/cvh_unboxing/test.T
+====> Scanning ./programs/fast2haskell/test.T
+====> Scanning ./programs/fun_insts/test.T
+====> Scanning ./programs/galois_raytrace/test.T
+====> Scanning ./programs/hs-boot/all.T
+====> Scanning ./programs/jl_defaults/test.T
+====> Scanning ./programs/joao-circular/test.T
+====> Scanning ./programs/jq_readsPrec/test.T
+====> Scanning ./programs/jtod_circint/test.T
+====> Scanning ./programs/jules_xref/test.T
+====> Scanning ./programs/jules_xref2/test.T
+====> Scanning ./programs/launchbury/test.T
+====> Scanning ./programs/lennart_range/test.T
+====> Scanning ./programs/lex/test.T
+====> Scanning ./programs/life_space_leak/test.T
+====> Scanning ./programs/maessen-hashtab/test.T
+====> Scanning ./programs/north_array/test.T
+====> Scanning ./programs/okeefe_neural/test.T
+====> Scanning ./programs/record_upd/test.T
+====> Scanning ./programs/rittri/test.T
+====> Scanning ./programs/sanders_array/test.T
+====> Scanning ./programs/seward-space-leak/test.T
+====> Scanning ./programs/strict_anns/test.T
+====> Scanning ./programs/thurston-modular-arith/test.T
+====> Scanning ./quasiquotation/all.T
+====> Scanning ./quasiquotation/T4491/test.T
+====> Scanning ./quasiquotation/qq001/test.T
+====> Scanning ./quasiquotation/qq002/test.T
+====> Scanning ./quasiquotation/qq003/test.T
+====> Scanning ./quasiquotation/qq004/test.T
+====> Scanning ./quasiquotation/qq005/test.T
+====> Scanning ./quasiquotation/qq006/test.T
+====> Scanning ./quasiquotation/qq007/test.T
+====> Scanning ./quasiquotation/qq008/test.T
+====> Scanning ./quasiquotation/qq009/test.T
+====> Scanning ./quotes/all.T
+====> Scanning ./quotes/TH_spliceViewPat/test.T
+====> Scanning ./rebindable/all.T
+====> Scanning ./regalloc/all.T
+====> Scanning ./rename/prog001/test.T
+====> Scanning ./rename/prog002/test.T
+====> Scanning ./rename/prog003/test.T
+====> Scanning ./rename/prog004/test.T
+====> Scanning ./rename/prog005/test.T
+====> Scanning ./rename/prog006/all.T
+====> Scanning ./rename/should_compile/all.T
+====> Scanning ./rename/should_compile/T3103/test.T
+====> Scanning ./rename/should_fail/all.T
+====> Scanning ./roles/should_compile/all.T
+====> Scanning ./roles/should_fail/all.T
+====> Scanning ./rts/all.T
+====> Scanning ./rts/T10672/all.T
+====> Scanning ./rts/T11223/all.T
+====> Scanning ./rts/T12031/all.T
+====> Scanning ./rts/T12771/all.T
+====> Scanning ./rts/T13082/all.T
+====> Scanning ./rts/T13287/all.T
+====> Scanning ./rts/T1791/all.T
+====> Scanning ./rts/T5644/all.T
+====> Scanning ./rts/T7289/all.T
+====> Scanning ./rts/T8308/all.T
+====> Scanning ./rts/T9579/all.T
+====> Scanning ./runghc/all.T
+====> Scanning ./safeHaskell/check/all.T
+====> Scanning ./safeHaskell/check/pkg01/all.T
+====> Scanning ./safeHaskell/flags/all.T
+====> Scanning ./safeHaskell/ghci/all.T
+====> Scanning ./safeHaskell/overlapping/all.T
+====> Scanning ./safeHaskell/safeInfered/all.T
+====> Scanning ./safeHaskell/safeLanguage/all.T
+====> Scanning ./safeHaskell/unsafeLibs/all.T
+====> Scanning ./semigroup/all.T
+====> Scanning ./showIface/all.T
+====> Scanning ./simplCore/T9646/test.T
+====> Scanning ./simplCore/prog001/test.T
+====> Scanning ./simplCore/prog002/test.T
+====> Scanning ./simplCore/prog003/test.T
+====> Scanning ./simplCore/should_compile/all.T
+====> Scanning ./simplCore/should_fail/all.T
+====> Scanning ./simplCore/should_run/all.T
+====> Scanning ./simplStg/should_compile/all.T
+====> Scanning ./simplStg/should_run/all.T
+====> Scanning ./stage1/all.T
+====> Scanning ./stranal/should_compile/all.T
+====> Scanning ./stranal/should_run/all.T
+====> Scanning ./stranal/should_run/T8425/all.T
+====> Scanning ./stranal/sigs/all.T
+====> Scanning ./th/all.T
+====> Scanning ./th/T2014/all.T
+====> Scanning ./th/TH_import_loop/TH_import_loop.T
+====> Scanning ./th/TH_linker/all.T
+====> Scanning ./th/should_compile/T8025/all.T
+====> Scanning ./typecheck/T11824/all.T
+====> Scanning ./typecheck/T12441/all.T
+====> Scanning ./typecheck/bug1465/all.T
+====> Scanning ./typecheck/prog001/test.T
+====> Scanning ./typecheck/prog002/test.T
+====> Scanning ./typecheck/should_compile/all.T
+====> Scanning ./typecheck/should_fail/all.T
+====> Scanning ./typecheck/should_run/all.T
+====> Scanning ./typecheck/testeq1/test.T
+====> Scanning ./unboxedsums/all.T
+====> Scanning ./unboxedsums/module/all.T
+====> Scanning ./warnings/minimal/all.T
+====> Scanning ./warnings/should_compile/all.T
+====> Scanning ./warnings/should_compile/T10637/all.T
+====> Scanning ./warnings/should_compile/T10890/all.T
+====> Scanning ./warnings/should_compile/T13727/all.T
+====> Scanning ./warnings/should_fail/all.T
+====> Scanning ./wcompat-warnings/all.T
+====> Scanning ../../libraries/array/tests/all.T
+====> Scanning ../../libraries/base/tests/all.T
+====> Scanning ../../libraries/base/tests/Concurrent/all.T
+====> Scanning ../../libraries/base/tests/IO/all.T
+====> Scanning ../../libraries/base/tests/IO/T12010/test.T
+====> Scanning ../../libraries/base/tests/Numeric/all.T
+====> Scanning ../../libraries/base/tests/System/all.T
+====> Scanning ../../libraries/base/tests/Text.Printf/all.T
+====> Scanning ../../libraries/ghc-compact/tests/all.T
+====> Scanning ../../libraries/hpc/tests/fork/test.T
+====> Scanning ../../libraries/hpc/tests/function/test.T
+====> Scanning ../../libraries/hpc/tests/function2/test.T
+====> Scanning ../../libraries/hpc/tests/ghc_ghci/test.T
+====> Scanning ../../libraries/hpc/tests/raytrace/test.T
+====> Scanning ../../libraries/hpc/tests/raytrace/tixs/test.T
+====> Scanning ../../libraries/hpc/tests/simple/test.T
+====> Scanning ../../libraries/hpc/tests/simple/tixs/test.T
+====> Scanning ../../libraries/parallel/tests/all.T
+====> Scanning ../../libraries/process/tests/all.T
+====> Scanning ../../libraries/process/tests/T9775/all.T
+====> Scanning ../../libraries/random/tests/all.T
+====> Scanning ../../libraries/stm/tests/all.T
+====> Scanning ../../libraries/template-haskell/tests/all.T
+====> Scanning ../../libraries/unix/tests/all.T
+====> Scanning ../../libraries/unix/tests/libposix/all.T
+=====> T3924(normal) 242 of 5968 [0, 0, 0]
+cd "./callarity/perf/T3924.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T3924 T3924.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+=====> T10858(normal) 726 of 5968 [0, 0, 0]
+cd "./deriving/perf/T10858.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T10858.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O +RTS -V0 -tT10858.comp.stats --machine-readable -RTS
+cd "./callarity/perf/T3924.run" && ./T3924 +RTS -V0 -tT3924.stats --machine-readable -RTS  
+*** unexpected failure for T3924(normal)
+=====> T1969(normal) 2970 of 5968 [0, 1, 0]
+cd "./perf/compiler/T1969.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T1969.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output +RTS -G1 -RTS  +RTS -V0 -tT1969.comp.stats --machine-readable -RTS
+=====> T3294(normal) 2971 of 5968 [0, 1, 0]
+=====> T4801(normal) 2971 of 5968 [0, 1, 0]
+cd "./perf/compiler/T3294.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T3294.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output +RTS -G1 -RTS  +RTS -V0 -tT3294.comp.stats --machine-readable -RTS
+=====> T3064(normal) 2971 of 5968 [0, 1, 0]
+cd "./perf/compiler/T4801.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T4801.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output +RTS -G1 -RTS  +RTS -V0 -tT4801.comp.stats --machine-readable -RTS
+cd "./perf/compiler/T3064.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T3064.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output +RTS -G1 -RTS  +RTS -V0 -tT3064.comp.stats --machine-readable -RTS
+=====> T5030(normal) 2973 of 5968 [0, 1, 0]
+cd "./perf/compiler/T5030.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T5030.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -freduction-depth=300 +RTS -V0 -tT5030.comp.stats --machine-readable -RTS
+=====> T5631(normal) 2974 of 5968 [0, 1, 0]
+cd "./perf/compiler/T5631.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T5631.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output   +RTS -V0 -tT5631.comp.stats --machine-readable -RTS
+=====> parsing001(normal) 2975 of 5968 [0, 1, 0]
+cd "./perf/compiler/parsing001.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c parsing001.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output   +RTS -V0 -tparsing001.comp.stats --machine-readable -RTS
+=====> T783(normal) 2976 of 5968 [0, 1, 0]
+cd "./perf/compiler/T783.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T783.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output -static  +RTS -V0 -tT783.comp.stats --machine-readable -RTS
+=====> T5321Fun(normal) 2977 of 5968 [0, 1, 0]
+cd "./perf/compiler/T5321Fun.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T5321Fun.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output   +RTS -V0 -tT5321Fun.comp.stats --machine-readable -RTS
+bytes allocated value is too high:
+    Expected    T5631(normal) bytes allocated: 1037482512 +/-5%
+    Lower bound T5631(normal) bytes allocated:  985608386 
+    Upper bound T5631(normal) bytes allocated: 1089356638 
+    Actual      T5631(normal) bytes allocated: 1100827896 
+    Deviation   T5631(normal) bytes allocated:        6.1 %
+*** unexpected stat test failure for T5631(normal)
+=====> T5321FD(normal) 2978 of 5968 [0, 1, 0]
+cd "./perf/compiler/T5321FD.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T5321FD.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output   +RTS -V0 -tT5321FD.comp.stats --machine-readable -RTS
+=====> T5642(normal) 2979 of 5968 [0, 1, 0]
+cd "./perf/compiler/T5642.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T5642.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O +RTS -V0 -tT5642.comp.stats --machine-readable -RTS
+bytes allocated value is too low:
+(If this is because you have improved GHC, please
+update the test so that GHC doesn't regress again)
+    Expected    T5321Fun(normal) bytes allocated: 488295304 +/-5%
+    Lower bound T5321Fun(normal) bytes allocated: 463880538 
+    Upper bound T5321Fun(normal) bytes allocated: 512710070 
+    Actual      T5321Fun(normal) bytes allocated: 449775392 
+    Deviation   T5321Fun(normal) bytes allocated:      -7.9 %
+*** unexpected stat test failure for T5321Fun(normal)
+=====> T5837(normal) 2980 of 5968 [0, 1, 0]
+cd "./perf/compiler/T5837.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T5837.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -freduction-depth=50 +RTS -V0 -tT5837.comp.stats --machine-readable -RTS
+=====> T6048(optasm) 2981 of 5968 [0, 1, 0]
+cd "./perf/compiler/T6048.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T6048.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -fasm  +RTS -V0 -tT6048.comp.stats --machine-readable -RTS
+bytes allocated value is too low:
+(If this is because you have improved GHC, please
+update the test so that GHC doesn't regress again)
+    Expected    T5321FD(normal) bytes allocated: 477840432 +/-10%
+    Lower bound T5321FD(normal) bytes allocated: 430056388 
+    Upper bound T5321FD(normal) bytes allocated: 525624476 
+    Actual      T5321FD(normal) bytes allocated: 415019456 
+    Deviation   T5321FD(normal) bytes allocated:     -13.1 %
+*** unexpected stat test failure for T5321FD(normal)
+=====> T9020(optasm) 2982 of 5968 [0, 1, 0]
+cd "./perf/compiler/T9020.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T9020.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -fasm  +RTS -V0 -tT9020.comp.stats --machine-readable -RTS
+=====> T9675(optasm) 2983 of 5968 [0, 1, 0]
+cd "./perf/compiler/T9675.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T9675.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output +RTS -G1 -RTS -O -fasm  +RTS -V0 -tT9675.comp.stats --machine-readable -RTS
+max_bytes_used value is too low:
+(If this is because you have improved GHC, please
+update the test so that GHC doesn't regress again)
+    Expected    T3294(normal) max_bytes_used: 63131248 +/-20%
+    Lower bound T3294(normal) max_bytes_used: 50504998 
+    Upper bound T3294(normal) max_bytes_used: 75757498 
+    Actual      T3294(normal) max_bytes_used: 32892864 
+    Deviation   T3294(normal) max_bytes_used:    -47.9 %
+bytes allocated value is too low:
+(If this is because you have improved GHC, please
+update the test so that GHC doesn't regress again)
+    Expected    T3294(normal) bytes allocated: 2758641264 +/-5%
+    Lower bound T3294(normal) bytes allocated: 2620709200 
+    Upper bound T3294(normal) bytes allocated: 2896573328 
+    Actual      T3294(normal) bytes allocated: 2254474192 
+    Deviation   T3294(normal) bytes allocated:      -18.3 %
+*** unexpected stat test failure for T3294(normal)
+=====> T9872a(normal) 2984 of 5968 [0, 1, 0]
+cd "./perf/compiler/T9872a.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T9872a.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output   +RTS -V0 -tT9872a.comp.stats --machine-readable -RTS
+=====> T9872b(normal) 2985 of 5968 [0, 1, 0]
+cd "./perf/compiler/T9872b.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T9872b.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output   +RTS -V0 -tT9872b.comp.stats --machine-readable -RTS
+=====> T9872c(normal) 2986 of 5968 [0, 1, 0]
+cd "./perf/compiler/T9872c.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T9872c.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output   +RTS -V0 -tT9872c.comp.stats --machine-readable -RTS
+=====> T9872d(normal) 2987 of 5968 [0, 1, 0]
+cd "./perf/compiler/T9872d.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T9872d.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output   +RTS -V0 -tT9872d.comp.stats --machine-readable -RTS
+=====> T9961(normal) 2988 of 5968 [0, 1, 0]
+cd "./perf/compiler/T9961.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T9961.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O +RTS -V0 -tT9961.comp.stats --machine-readable -RTS
+=====> T9233(normal) 2989 of 5968 [0, 1, 0]
+cd "./perf/compiler/T9233.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" --make  T9233 -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -v0 -O2 -fno-spec-constr +RTS -V0 -tT9233.comp.stats --machine-readable -RTS
+=====> T10370(optasm) 2990 of 5968 [0, 1, 0]
+cd "./perf/compiler/T10370.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T10370.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output +RTS -G1 -RTS -O -fasm  +RTS -V0 -tT10370.comp.stats --machine-readable -RTS
+=====> T10547(normal) 2991 of 5968 [0, 1, 0]
+cd "./perf/compiler/T10547.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T10547.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -fprint-expanded-synonyms +RTS -V0 -tT10547.comp.stats --machine-readable -RTS
+=====> T12227(normal) 2992 of 5968 [0, 1, 0]
+cd "./perf/compiler/T12227.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T12227.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2 -ddump-hi -ddump-to-file +RTS -M1G +RTS -V0 -tT12227.comp.stats --machine-readable -RTS
+=====> T12425(optasm) 2993 of 5968 [0, 1, 0]
+cd "./perf/compiler/T12425.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T12425.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -fasm  +RTS -V0 -tT12425.comp.stats --machine-readable -RTS
+=====> T12234(optasm) 2994 of 5968 [0, 1, 0]
+cd "./perf/compiler/T12234.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T12234.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -fasm  +RTS -V0 -tT12234.comp.stats --machine-readable -RTS
+=====> T13035(normal) 2995 of 5968 [0, 1, 0]
+cd "./perf/compiler/T13035.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T13035.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output   +RTS -V0 -tT13035.comp.stats --machine-readable -RTS
+=====> T13056(optasm) 2996 of 5968 [0, 1, 0]
+cd "./perf/compiler/T13056.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T13056.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -fasm -O1 +RTS -V0 -tT13056.comp.stats --machine-readable -RTS
+=====> T12707(normal) 2997 of 5968 [0, 1, 0]
+cd "./perf/compiler/T12707.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T12707.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output   +RTS -V0 -tT12707.comp.stats --machine-readable -RTS
+bytes allocated value is too high:
+    Expected    T13035(normal) bytes allocated:  93249744 +/-5%
+    Lower bound T13035(normal) bytes allocated:  88587256 
+    Upper bound T13035(normal) bytes allocated:  97912232 
+    Actual      T13035(normal) bytes allocated: 117359488 
+    Deviation   T13035(normal) bytes allocated:      25.9 %
+*** unexpected stat test failure for T13035(normal)
+=====> T13379(normal) 2998 of 5968 [0, 1, 0]
+cd "./perf/compiler/T13379.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T13379.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output   +RTS -V0 -tT13379.comp.stats --machine-readable -RTS
+=====> MultiLayerModules(normal) 2999 of 5968 [0, 1, 0]
+cd "./perf/compiler/MultiLayerModules.run" && ./genMultiLayerModules
+=====> T13701(normal) 3000 of 5968 [0, 1, 0]
+cd "./perf/compiler/T13701.run" && ./genT13701
+cd "./perf/compiler/T13701.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" --make  T13701 -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -v0 +RTS -V0 -tT13701.comp.stats --machine-readable -RTS
+bytes allocated value is too low:
+(If this is because you have improved GHC, please
+update the test so that GHC doesn't regress again)
+    Expected    T12707(normal) bytes allocated: 1231809592 +/-5%
+    Lower bound T12707(normal) bytes allocated: 1170219112 
+    Upper bound T12707(normal) bytes allocated: 1293400072 
+    Actual      T12707(normal) bytes allocated: 1163689088 
+    Deviation   T12707(normal) bytes allocated:       -5.5 %
+*** unexpected stat test failure for T12707(normal)
+=====> T13719(normal) 3001 of 5968 [0, 1, 0]
+cd "./perf/compiler/T13719.run" && ./genT13719
+cd "./perf/compiler/MultiLayerModules.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" --make  MultiLayerModules -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -v0 +RTS -V0 -tMultiLayerModules.comp.stats --machine-readable -RTS
+cd "./perf/compiler/T13719.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" --make  T13719 -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -v0 +RTS -V0 -tT13719.comp.stats --machine-readable -RTS
+=====> Naperian(optasm) 3002 of 5968 [0, 1, 0]
+cd "./perf/compiler/Naperian.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c Naperian.hs -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -fasm  +RTS -V0 -tNaperian.comp.stats --machine-readable -RTS
+bytes allocated value is too low:
+(If this is because you have improved GHC, please
+update the test so that GHC doesn't regress again)
+    Expected    Naperian(optasm) bytes allocated: 2381935784 +/-10%
+    Lower bound Naperian(optasm) bytes allocated: 2143742205 
+    Upper bound Naperian(optasm) bytes allocated: 2620129363 
+    Actual      Naperian(optasm) bytes allocated:   48237368 
+    Deviation   Naperian(optasm) bytes allocated:      -98.0 %
+=====> haddock.base(normal) 3003 of 5968 [0, 1, 0]
+bytes allocated value is too low:
+(If this is because you have improved GHC, please
+update the test so that GHC doesn't regress again)
+    Expected    haddock.base(normal) bytes allocated: 25173968808 +/-5%
+    Lower bound haddock.base(normal) bytes allocated: 23915270367 
+    Upper bound haddock.base(normal) bytes allocated: 26432667249 
+    Actual      haddock.base(normal) bytes allocated: 23896881272 
+    Deviation   haddock.base(normal) bytes allocated:        -5.1 %
+*** unexpected stat test failure for haddock.base(normal)
+=====> haddock.Cabal(normal) 3004 of 5968 [0, 1, 0]
+=====> haddock.compiler(normal) 3005 of 5968 [0, 1, 0]
+=====> join002(optasm) 3007 of 5968 [0, 1, 0]
+cd "./perf/join_points/join002.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o join002 join002.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -fasm 
+cd "./perf/join_points/join002.run" && ./join002 +RTS -V0 -tjoin002.stats --machine-readable -RTS  
+*** unexpected failure for join002(optasm)
+=====> join003(optasm) 3008 of 5968 [0, 2, 0]
+cd "./perf/join_points/join003.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o join003 join003.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -fasm 
+cd "./perf/join_points/join003.run" && ./join003 +RTS -V0 -tjoin003.stats --machine-readable -RTS  
+*** unexpected failure for join003(optasm)
+=====> join004(optasm) 3009 of 5968 [0, 3, 0]
+cd "./perf/join_points/join004.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o join004 join004.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -fasm 
+cd "./perf/join_points/join004.run" && ./join004 +RTS -V0 -tjoin004.stats --machine-readable -RTS  
+*** unexpected failure for join004(optasm)
+=====> join007(optasm) 3012 of 5968 [0, 4, 0]
+cd "./perf/join_points/join007.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o join007 join007.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -fasm 
+cd "./perf/join_points/join007.run" && ./join007 +RTS -V0 -tjoin007.stats --machine-readable -RTS  
+*** unexpected failure for join007(optasm)
+=====> T5835(normal) 3013 of 5968 [0, 5, 0]
+cd "./perf/should_run/T5835.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T5835 T5835.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+bytes allocated value is too low:
+(If this is because you have improved GHC, please
+update the test so that GHC doesn't regress again)
+    Expected    T13701(normal) bytes allocated: 2511285600 +/-10%
+    Lower bound T13701(normal) bytes allocated: 2260157040 
+    Upper bound T13701(normal) bytes allocated: 2762414160 
+    Actual      T13701(normal) bytes allocated: 2128336528 
+    Deviation   T13701(normal) bytes allocated:      -15.2 %
+*** unexpected stat test failure for T13701(normal)
+=====> T12791(normal) 3014 of 5968 [0, 5, 0]
+cd "./perf/should_run/T12791.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T12791 T12791.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T5835.run" && ./T5835 +RTS -V0 -tT5835.stats --machine-readable -RTS  
+*** unexpected failure for T5835(normal)
+=====> T10359(normal) 3015 of 5968 [0, 6, 0]
+cd "./perf/should_run/T10359.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T10359 T10359.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T12791.run" && ./T12791 +RTS -V0 -tT12791.stats --machine-readable -RTS  
+*** unexpected failure for T12791(normal)
+=====> T3586(normal) 3016 of 5968 [0, 7, 0]
+cd "./perf/should_run/T3586.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T3586 T3586.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output +RTS -G1 -RTS -O
+cd "./perf/should_run/T10359.run" && ./T10359 +RTS -V0 -tT10359.stats --machine-readable -RTS  
+*** unexpected failure for T10359(normal)
+=====> T4830(normal) 3017 of 5968 [0, 8, 0]
+cd "./perf/should_run/T4830.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T4830 T4830.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2
+=====> lazy-bs-alloc(normal) 3019 of 5968 [0, 8, 0]
+cd "./perf/should_run/lazy-bs-alloc.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o lazy-bs-alloc lazy-bs-alloc.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output +RTS -G1 -RTS -O
+cd "./perf/should_run/T3586.run" && ./T3586 +RTS -V0 -tT3586.stats --machine-readable -RTS  
+*** unexpected failure for T3586(normal)
+=====> T876(normal) 3020 of 5968 [0, 9, 0]
+cd "./perf/should_run/T876.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T876 T876.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T4830.run" && ./T4830 +RTS -V0 -tT4830.stats --machine-readable -RTS  
+*** unexpected failure for T4830(normal)
+=====> T3738(normal) 3023 of 5968 [0, 10, 0]
+cd "./perf/should_run/T3738.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T3738 T3738.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/lazy-bs-alloc.run" && ./lazy-bs-alloc +RTS -V0 -tlazy-bs-alloc.stats --machine-readable -RTS  arith011.stdout
+Wrong exit code for lazy-bs-alloc(normal)(expected 0 , actual 1 )
+Stderr ( lazy-bs-alloc ):
+lazy-bs-alloc: +RTS: openBinaryFile: does not exist (No such file or directory)
+*** unexpected failure for lazy-bs-alloc(normal)
+=====> MethSharing(normal) 3024 of 5968 [0, 11, 0]
+cd "./perf/should_run/MethSharing.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o MethSharing MethSharing.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T876.run" && ./T876 +RTS -V0 -tT876.stats --machine-readable -RTS  10000
+Wrong exit code for T876(normal)(expected 0 , actual 1 )
+Stderr ( T876 ):
+T876: user error (Pattern match failure in do expression at T876.hs:10:13-17)
+*** unexpected failure for T876(normal)
+=====> T5113(normal) 3027 of 5968 [0, 12, 0]
+cd "./perf/should_run/T5113.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T5113 T5113.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T3738.run" && ./T3738 +RTS -V0 -tT3738.stats --machine-readable -RTS  
+*** unexpected failure for T3738(normal)
+=====> T4978(normal) 3028 of 5968 [0, 13, 0]
+cd "./perf/should_run/T4978.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T4978 T4978.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2
+cd "./perf/should_run/MethSharing.run" && ./MethSharing +RTS -V0 -tMethSharing.stats --machine-readable -RTS  
+=====> T5205(normal) 3029 of 5968 [0, 13, 0]
+cd "./perf/should_run/T5205.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T5205 T5205.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  
+*** unexpected failure for MethSharing(normal)
+=====> T5549(normal) 3030 of 5968 [0, 14, 0]
+cd "./perf/should_run/T5549.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T5549 T5549.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T5113.run" && ./T5113 +RTS -V0 -tT5113.stats --machine-readable -RTS  
+*** unexpected failure for T5113(normal)
+=====> T4474a(normal) 3031 of 5968 [0, 15, 0]
+cd "./perf/should_run/T4474a.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T4474a T4474a.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T5205.run" && ./T5205 +RTS -V0 -tT5205.stats --machine-readable -RTS  
+cd "./perf/should_run/T4978.run" && ./T4978 +RTS -V0 -tT4978.stats --machine-readable -RTS  
+*** unexpected failure for T4978(normal)
+=====> T4474b(normal) 3032 of 5968 [0, 16, 0]
+cd "./perf/should_run/T4474b.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T4474b T4474b.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T5549.run" && ./T5549 +RTS -V0 -tT5549.stats --machine-readable -RTS  
+cd "./perf/should_run/T4474a.run" && ./T4474a +RTS -V0 -tT4474a.stats --machine-readable -RTS  
+*** unexpected failure for T5205(normal)
+=====> T4474c(normal) 3033 of 5968 [0, 17, 0]
+cd "./perf/should_run/T4474c.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T4474c T4474c.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T4474b.run" && ./T4474b +RTS -V0 -tT4474b.stats --machine-readable -RTS  
+cd "./perf/should_run/T4474c.run" && ./T4474c +RTS -V0 -tT4474c.stats --machine-readable -RTS  
+*** unexpected failure for T4474a(normal)
+=====> T5237(normal) 3034 of 5968 [0, 18, 0]
+cd "./perf/should_run/T5237.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T5237 T5237.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O 
+*** unexpected failure for T4474b(normal)
+=====> T5536(normal) 3035 of 5968 [0, 19, 0]
+cd "./perf/should_run/T5536.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T5536 T5536.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T5237.run" && ./T5237 +RTS -V0 -tT5237.stats --machine-readable -RTS  
+*** unexpected failure for T5237(normal)
+=====> T7257(normal) 3036 of 5968 [0, 20, 0]
+cd "./perf/should_run/T7257.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T7257 T7257.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+*** unexpected failure for T4474c(normal)
+=====> Conversions(normal) 3037 of 5968 [0, 21, 0]
+cd "./perf/should_run/Conversions.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o Conversions Conversions.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -msse2
+*** unexpected failure for T5549(normal)
+=====> T7436(normal) 3039 of 5968 [0, 22, 0]
+cd "./perf/should_run/T7436.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T7436 T7436.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T5536.run" && ./T5536 +RTS -V0 -tT5536.stats --machine-readable -RTS  
+cd "./perf/should_run/T7257.run" && ./T7257 +RTS -V0 -tT7257.stats --machine-readable -RTS  
+cd "./perf/should_run/Conversions.run" && ./Conversions +RTS -V0 -tConversions.stats --machine-readable -RTS  
+*** unexpected failure for T5536(normal)
+=====> T7797(normal) 3040 of 5968 [0, 23, 0]
+cd "./perf/should_run/T7797.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T7797 T7797.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+*** unexpected failure for Conversions(normal)
+=====> T7954(normal) 3041 of 5968 [0, 24, 0]
+cd "./perf/should_run/T7954.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T7954 T7954.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T7436.run" && ./T7436 +RTS -V0 -tT7436.stats --machine-readable -RTS  
+*** unexpected failure for T7436(normal)
+=====> T7850(normal) 3042 of 5968 [0, 25, 0]
+cd "./perf/should_run/T7850.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T7850 T7850.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+*** unexpected failure for T7257(normal)
+=====> T5949(normal) 3043 of 5968 [0, 26, 0]
+cd "./perf/should_run/T5949.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T5949 T5949.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T7954.run" && ./T7954 +RTS -V0 -tT7954.stats --machine-readable -RTS  
+cd "./perf/should_run/T7797.run" && ./T7797 +RTS -V0 -tT7797.stats --machine-readable -RTS  
+cd "./perf/should_run/T7850.run" && ./T7850 +RTS -V0 -tT7850.stats --machine-readable -RTS  
+*** unexpected failure for T7797(normal)
+=====> T4267(normal) 3044 of 5968 [0, 27, 0]
+cd "./perf/should_run/T4267.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T4267 T4267.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T5949.run" && ./T5949 +RTS -V0 -tT5949.stats --machine-readable -RTS  
+*** unexpected failure for T5949(normal)
+=====> T7619(normal) 3045 of 5968 [0, 28, 0]
+cd "./perf/should_run/T7619.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T7619 T7619.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+*** unexpected failure for T7954(normal)
+=====> InlineArrayAlloc(normal) 3046 of 5968 [0, 29, 0]
+cd "./perf/should_run/InlineArrayAlloc.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o InlineArrayAlloc InlineArrayAlloc.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2
+cd "./perf/should_run/T4267.run" && ./T4267 +RTS -V0 -tT4267.stats --machine-readable -RTS  
+*** unexpected failure for T4267(normal)
+=====> InlineByteArrayAlloc(normal) 3047 of 5968 [0, 30, 0]
+cd "./perf/should_run/InlineByteArrayAlloc.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o InlineByteArrayAlloc InlineByteArrayAlloc.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2
+cd "./perf/should_run/T7619.run" && ./T7619 +RTS -V0 -tT7619.stats --machine-readable -RTS  
+*** unexpected failure for T7619(normal)
+=====> InlineCloneArrayAlloc(normal) 3048 of 5968 [0, 31, 0]
+cd "./perf/should_run/InlineCloneArrayAlloc.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o InlineCloneArrayAlloc InlineCloneArrayAlloc.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2
+cd "./perf/should_run/InlineArrayAlloc.run" && ./InlineArrayAlloc +RTS -V0 -tInlineArrayAlloc.stats --machine-readable -RTS  
+*** unexpected failure for InlineArrayAlloc(normal)
+=====> T9203(normal) 3049 of 5968 [0, 32, 0]
+cd "./perf/should_run/T9203.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T9203 T9203.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2
+cd "./perf/should_run/InlineByteArrayAlloc.run" && ./InlineByteArrayAlloc +RTS -V0 -tInlineByteArrayAlloc.stats --machine-readable -RTS  
+*** unexpected failure for InlineByteArrayAlloc(normal)
+=====> T9339(normal) 3050 of 5968 [0, 33, 0]
+cd "./perf/should_run/T9339.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T9339 T9339.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2 -fspec-constr-keen
+cd "./perf/should_run/InlineCloneArrayAlloc.run" && ./InlineCloneArrayAlloc +RTS -V0 -tInlineCloneArrayAlloc.stats --machine-readable -RTS  
+*** unexpected failure for InlineCloneArrayAlloc(normal)
+=====> T8472(normal) 3051 of 5968 [0, 34, 0]
+cd "./perf/should_run/T8472.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T8472 T8472.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2
+cd "./perf/should_run/T9203.run" && ./T9203 +RTS -V0 -tT9203.stats --machine-readable -RTS  
+cd "./perf/should_run/T9339.run" && ./T9339 +RTS -V0 -tT9339.stats --machine-readable -RTS  
+*** unexpected failure for T9203(normal)
+=====> T12996(normal) 3052 of 5968 [0, 35, 0]
+cd "./perf/should_run/T12996.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T12996 T12996.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2
+*** unexpected failure for T9339(normal)
+=====> T13001(normal) 3053 of 5968 [0, 36, 0]
+cd "./perf/should_run/T13001.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T13001 T13001.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2
+cd "./perf/should_run/T8472.run" && ./T8472 +RTS -V0 -tT8472.stats --machine-readable -RTS  
+*** unexpected failure for T8472(normal)
+=====> T12990(normal) 3054 of 5968 [0, 37, 0]
+cd "./perf/should_run/T12990.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T12990 T12990.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2
+cd "./perf/should_run/T12996.run" && ./T12996 +RTS -V0 -tT12996.stats --machine-readable -RTS  
+*** unexpected failure for T12996(normal)
+=====> T13218(normal) 3055 of 5968 [0, 38, 0]
+cd "./perf/should_run/T13218.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T13218 T13218.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T13001.run" && ./T13001 +RTS -V0 -tT13001.stats --machine-readable -RTS  
+*** unexpected failure for T13001(normal)
+=====> DeriveNull(normal) 3056 of 5968 [0, 39, 0]
+cd "./perf/should_run/DeriveNull.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o DeriveNull DeriveNull.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/should_run/T12990.run" && ./T12990 +RTS -V0 -tT12990.stats --machine-readable -RTS  
+*** unexpected failure for T12990(normal)
+=====> T13623(normal) 3058 of 5968 [0, 40, 0]
+cd "./perf/should_run/T13623.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T13623 T13623.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O2
+cd "./perf/should_run/T13218.run" && ./T13218 +RTS -V0 -tT13218.stats --machine-readable -RTS  
+*** unexpected failure for T13218(normal)
+=====> space_leak_001(normal) 3059 of 5968 [0, 41, 0]
+cd "./perf/space_leaks/space_leak_001.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o space_leak_001 space_leak_001.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  
+cd "./perf/should_run/DeriveNull.run" && ./DeriveNull +RTS -V0 -tDeriveNull.stats --machine-readable -RTS  
+*** unexpected failure for DeriveNull(normal)
+=====> T4334(normal) 3060 of 5968 [0, 42, 0]
+cd "./perf/space_leaks/T4334.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T4334 T4334.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  
+cd "./perf/should_run/T13623.run" && ./T13623 +RTS -V0 -tT13623.stats --machine-readable -RTS  
+cd "./perf/space_leaks/space_leak_001.run" && ./space_leak_001 +RTS -V0 -tspace_leak_001.stats --machine-readable -RTS  
+*** unexpected failure for T13623(normal)
+=====> T2762(normal) 3061 of 5968 [0, 43, 0]
+cd "./perf/space_leaks/T2762.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T2762 T2762.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./perf/space_leaks/T4334.run" && ./T4334 +RTS -V0 -tT4334.stats --machine-readable -RTS  1000000 2 t
+Wrong exit code for T4334(normal)(expected 0 , actual 1 )
+Stderr ( T4334 ):
+T4334: Prelude.read: no parse
+*** unexpected failure for T4334(normal)
+=====> T4029(ghci) 3063 of 5968 [0, 44, 0]
+cd "./perf/space_leaks/T4029.run" && HC="/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" HC_OPTS="-dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output +RTS -G1 -RTS" "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output +RTS -G1 -RTS --interactive -v0 -ignore-dot-ghci -fno-ghci-history +RTS -I0.1 -RTS +RTS -V0 -tT4029.stats --machine-readable -RTS  < T4029.script
+cd "./perf/space_leaks/T2762.run" && ./T2762 +RTS -V0 -tT2762.stats --machine-readable -RTS  +RTS -G1 -RTS
+*** unexpected failure for T2762(normal)
+=====> T10678(normal) 3296 of 5968 [0, 45, 0]
+cd "./primops/should_run/T10678.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T10678 T10678.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+*** unexpected failure for space_leak_001(normal)
+=====> T7702(normal) 4090 of 5968 [0, 46, 0]
+cd "./simplCore/should_compile/T7702.run" && $MAKE -s --no-print-directory -C T7702plugin package.T7702 TOP=/home/jaredweakly/Code/ghc/testsuite
+cd "./primops/should_run/T10678.run" && ./T10678 +RTS -V0 -tT10678.stats --machine-readable -RTS  
+*** unexpected failure for T10678(normal)
+=====> T13536a(optasm) 4205 of 5968 [0, 47, 0]
+cd "./simplStg/should_run/T13536a.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T13536a T13536a.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O -fasm 
+cd "./simplStg/should_run/T13536a.run" && ./T13536a +RTS -V0 -tT13536a.stats --machine-readable -RTS  
+*** unexpected failure for T13536a(optasm)
+=====> T8766(normal) 5721 of 5968 [0, 48, 0]
+cd "../../libraries/base/tests/T8766.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T8766 T8766.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "../../libraries/base/tests/T8766.run" && ./T8766 +RTS -V0 -tT8766.stats --machine-readable -RTS  
+*** unexpected failure for T8766(normal)
+=====> T9848(normal) 5730 of 5968 [0, 49, 0]
+cd "../../libraries/base/tests/T9848.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T9848 T9848.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "./simplCore/should_compile/T7702.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -c T7702.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -v0 -package-db T7702plugin/pkg.T7702/local.package.conf -fplugin T7702Plugin -package T7702plugin -dynamic +RTS -V0 -tT7702.comp.stats --machine-readable -RTS
+=====> T13191(normal) 5737 of 5968 [0, 49, 0]
+cd "../../libraries/base/tests/T13191.run" &&  "/home/jaredweakly/Code/ghc/inplace/test   spaces/ghc-stage2" -o T13191 T13191.hs -dcore-lint -dcmm-lint -no-user-package-db -rtsopts -fno-warn-missed-specialisations -fshow-warning-groups -fdiagnostics-color=never -fno-diagnostics-show-caret -dno-debug-output  -O
+cd "../../libraries/base/tests/T9848.run" && ./T9848 +RTS -V0 -tT9848.stats --machine-readable -RTS  
+*** unexpected failure for T9848(normal)
+cd "../../libraries/base/tests/T13191.run" && ./T13191 +RTS -V0 -tT13191.stats --machine-readable -RTS  
+*** unexpected failure for T13191(normal)
+*** unexpected failure for T7850(normal)
+
+Unexpected results from:
+TEST="T12707 T5237 T4267 T13035 T5113 InlineArrayAlloc space_leak_001 InlineByteArrayAlloc T4474c T13623 join004 Conversions T7954 T9339 MethSharing join003 T5949 InlineCloneArrayAlloc T8472 T12990 T4830 T4474b T7619 T9203 T5631 T5321Fun lazy-bs-alloc T5536 join007 T3586 haddock.base T7797 T5549 T5835 T8766 T4334 T4978 T876 T13191 T13001 T3738 T3924 T7436 T7850 T12791 T13218 T13701 DeriveNull T5321FD T5205 T7257 T2762 T13536a T9848 T4474a T10678 T12996 T3294 join002 T10359"
+
+SUMMARY for test run started at Sat Aug  5 02:03:06 2017 PDT
+ 0:00:56 spent to go through
+    5968 total tests, which gave rise to
+   18759 test cases, of which
+   18667 were skipped
+
+       1 had missing libraries
+      31 expected passes
+       0 expected failures
+
+       0 caused framework failures
+       0 caused framework warnings
+       0 unexpected passes
+      52 unexpected failures
+       8 unexpected stat failures
+
+Unexpected failures:
+   callarity/perf/T3924.run                   T3924 [[Errno 2] No such file or directory: './callarity/perf/T3924.run/T3924.stats'] (normal)
+   perf/join_points/join002.run               join002 [[Errno 2] No such file or directory: './perf/join_points/join002.run/join002.stats'] (optasm)
+   perf/join_points/join003.run               join003 [[Errno 2] No such file or directory: './perf/join_points/join003.run/join003.stats'] (optasm)
+   perf/join_points/join004.run               join004 [[Errno 2] No such file or directory: './perf/join_points/join004.run/join004.stats'] (optasm)
+   perf/join_points/join007.run               join007 [[Errno 2] No such file or directory: './perf/join_points/join007.run/join007.stats'] (optasm)
+   perf/should_run/T5835.run                  T5835 [[Errno 2] No such file or directory: './perf/should_run/T5835.run/T5835.stats'] (normal)
+   perf/should_run/T12791.run                 T12791 [[Errno 2] No such file or directory: './perf/should_run/T12791.run/T12791.stats'] (normal)
+   perf/should_run/T10359.run                 T10359 [[Errno 2] No such file or directory: './perf/should_run/T10359.run/T10359.stats'] (normal)
+   perf/should_run/T3586.run                  T3586 [[Errno 2] No such file or directory: './perf/should_run/T3586.run/T3586.stats'] (normal)
+   perf/should_run/T4830.run                  T4830 [[Errno 2] No such file or directory: './perf/should_run/T4830.run/T4830.stats'] (normal)
+   perf/should_run/lazy-bs-alloc.run          lazy-bs-alloc [bad exit code] (normal)
+   perf/should_run/T876.run                   T876 [bad exit code] (normal)
+   perf/should_run/T3738.run                  T3738 [[Errno 2] No such file or directory: './perf/should_run/T3738.run/T3738.stats'] (normal)
+   perf/should_run/MethSharing.run            MethSharing [[Errno 2] No such file or directory: './perf/should_run/MethSharing.run/MethSharing.stats'] (normal)
+   perf/should_run/T5113.run                  T5113 [[Errno 2] No such file or directory: './perf/should_run/T5113.run/T5113.stats'] (normal)
+   perf/should_run/T4978.run                  T4978 [[Errno 2] No such file or directory: './perf/should_run/T4978.run/T4978.stats'] (normal)
+   perf/should_run/T5205.run                  T5205 [[Errno 2] No such file or directory: './perf/should_run/T5205.run/T5205.stats'] (normal)
+   perf/should_run/T4474a.run                 T4474a [[Errno 2] No such file or directory: './perf/should_run/T4474a.run/T4474a.stats'] (normal)
+   perf/should_run/T4474b.run                 T4474b [[Errno 2] No such file or directory: './perf/should_run/T4474b.run/T4474b.stats'] (normal)
+   perf/should_run/T5237.run                  T5237 [[Errno 2] No such file or directory: './perf/should_run/T5237.run/T5237.stats'] (normal)
+   perf/should_run/T4474c.run                 T4474c [[Errno 2] No such file or directory: './perf/should_run/T4474c.run/T4474c.stats'] (normal)
+   perf/should_run/T5549.run                  T5549 [[Errno 2] No such file or directory: './perf/should_run/T5549.run/T5549.stats'] (normal)
+   perf/should_run/T5536.run                  T5536 [[Errno 2] No such file or directory: './perf/should_run/T5536.run/T5536.stats'] (normal)
+   perf/should_run/Conversions.run            Conversions [[Errno 2] No such file or directory: './perf/should_run/Conversions.run/Conversions.stats'] (normal)
+   perf/should_run/T7436.run                  T7436 [[Errno 2] No such file or directory: './perf/should_run/T7436.run/T7436.stats'] (normal)
+   perf/should_run/T7257.run                  T7257 [[Errno 2] No such file or directory: './perf/should_run/T7257.run/T7257.stats'] (normal)
+   perf/should_run/T7797.run                  T7797 [[Errno 2] No such file or directory: './perf/should_run/T7797.run/T7797.stats'] (normal)
+   perf/should_run/T5949.run                  T5949 [[Errno 2] No such file or directory: './perf/should_run/T5949.run/T5949.stats'] (normal)
+   perf/should_run/T7954.run                  T7954 [[Errno 2] No such file or directory: './perf/should_run/T7954.run/T7954.stats'] (normal)
+   perf/should_run/T4267.run                  T4267 [[Errno 2] No such file or directory: './perf/should_run/T4267.run/T4267.stats'] (normal)
+   perf/should_run/T7619.run                  T7619 [[Errno 2] No such file or directory: './perf/should_run/T7619.run/T7619.stats'] (normal)
+   perf/should_run/InlineArrayAlloc.run       InlineArrayAlloc [[Errno 2] No such file or directory: './perf/should_run/InlineArrayAlloc.run/InlineArrayAlloc.stats'] (normal)
+   perf/should_run/InlineByteArrayAlloc.run   InlineByteArrayAlloc [[Errno 2] No such file or directory: './perf/should_run/InlineByteArrayAlloc.run/InlineByteArrayAlloc.stats'] (normal)
+   perf/should_run/InlineCloneArrayAlloc.run  InlineCloneArrayAlloc [[Errno 2] No such file or directory: './perf/should_run/InlineCloneArrayAlloc.run/InlineCloneArrayAlloc.stats'] (normal)
+   perf/should_run/T9203.run                  T9203 [[Errno 2] No such file or directory: './perf/should_run/T9203.run/T9203.stats'] (normal)
+   perf/should_run/T9339.run                  T9339 [[Errno 2] No such file or directory: './perf/should_run/T9339.run/T9339.stats'] (normal)
+   perf/should_run/T8472.run                  T8472 [[Errno 2] No such file or directory: './perf/should_run/T8472.run/T8472.stats'] (normal)
+   perf/should_run/T12996.run                 T12996 [[Errno 2] No such file or directory: './perf/should_run/T12996.run/T12996.stats'] (normal)
+   perf/should_run/T13001.run                 T13001 [[Errno 2] No such file or directory: './perf/should_run/T13001.run/T13001.stats'] (normal)
+   perf/should_run/T12990.run                 T12990 [[Errno 2] No such file or directory: './perf/should_run/T12990.run/T12990.stats'] (normal)
+   perf/should_run/T13218.run                 T13218 [[Errno 2] No such file or directory: './perf/should_run/T13218.run/T13218.stats'] (normal)
+   perf/should_run/DeriveNull.run             DeriveNull [[Errno 2] No such file or directory: './perf/should_run/DeriveNull.run/DeriveNull.stats'] (normal)
+   perf/should_run/T13623.run                 T13623 [[Errno 2] No such file or directory: './perf/should_run/T13623.run/T13623.stats'] (normal)
+   perf/space_leaks/T4334.run                 T4334 [bad exit code] (normal)
+   perf/space_leaks/T2762.run                 T2762 [[Errno 2] No such file or directory: './perf/space_leaks/T2762.run/T2762.stats'] (normal)
+   perf/space_leaks/space_leak_001.run        space_leak_001 [[Errno 2] No such file or directory: './perf/space_leaks/space_leak_001.run/space_leak_001.stats'] (normal)
+   primops/should_run/T10678.run              T10678 [[Errno 2] No such file or directory: './primops/should_run/T10678.run/T10678.stats'] (normal)
+   simplStg/should_run/T13536a.run            T13536a [[Errno 2] No such file or directory: './simplStg/should_run/T13536a.run/T13536a.stats'] (optasm)
+   ../../libraries/base/tests/T8766.run       T8766 [[Errno 2] No such file or directory: '../../libraries/base/tests/T8766.run/T8766.stats'] (normal)
+   ../../libraries/base/tests/T9848.run       T9848 [[Errno 2] No such file or directory: '../../libraries/base/tests/T9848.run/T9848.stats'] (normal)
+   ../../libraries/base/tests/T13191.run      T13191 [[Errno 2] No such file or directory: '../../libraries/base/tests/T13191.run/T13191.stats'] (normal)
+   perf/should_run/T7850.run                  T7850 [[Errno 2] No such file or directory: './perf/should_run/T7850.run/T7850.stats'] (normal)
+
+Unexpected stat failures:
+   perf/compiler/T5631.run        T5631 [stat not good enough] (normal)
+   perf/compiler/T5321Fun.run     T5321Fun [stat too good] (normal)
+   perf/compiler/T5321FD.run      T5321FD [stat too good] (normal)
+   perf/compiler/T3294.run        T3294 [stat too good] (normal)
+   perf/compiler/T13035.run       T13035 [stat not good enough] (normal)
+   perf/compiler/T12707.run       T12707 [stat too good] (normal)
+   perf/haddock/haddock.base.run  haddock.base [stat too good] (normal)
+   perf/compiler/T13701.run       T13701 [stat too good] (normal)
+
