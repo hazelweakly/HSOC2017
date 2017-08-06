@@ -1,0 +1,44 @@
+Small notes about the three commits compared:
+
+----------------------------------------------------------------------------------------------------
+commit fb75...
+
+Framework failures:
+   .  T2120 [duplicate] (There are multiple tests with this name)
+   .  largeArray [duplicate] (There are multiple tests with this name)
+   .  array001 [duplicate] (There are multiple tests with this name)
+   .  T9220 [duplicate] (There are multiple tests with this name)
+   .  T229 [duplicate] (There are multiple tests with this name)
+
+----------------------------------------------------------------------------------------------------
+commit fb75^...
+
+Unexpected stat failures:
+   perf/compiler/T5631.run  T5631 [stat not good enough] (normal)
+
+Framework failures:
+   .  T2120 [duplicate] (There are multiple tests with this name)
+   .  largeArray [duplicate] (There are multiple tests with this name)
+   .  array001 [duplicate] (There are multiple tests with this name)
+   .  T9220 [duplicate] (There are multiple tests with this name)
+   .  T229 [duplicate] (There are multiple tests with this name)
+
+----------------------------------------------------------------------------------------------------
+commit b10d...
+
+Unexpected stat failures:
+   perf/compiler/T5631.run        T5631 [stat not good enough] (normal)
+   perf/compiler/T5321Fun.run     T5321Fun [stat too good] (normal)
+   perf/compiler/T5321FD.run      T5321FD [stat too good] (normal)
+   perf/compiler/T3294.run        T3294 [stat too good] (normal)
+   perf/compiler/T13035.run       T13035 [stat not good enough] (normal)
+   perf/compiler/T12707.run       T12707 [stat too good] (normal)
+   perf/haddock/haddock.base.run  haddock.base [stat too good] (normal)
+   perf/compiler/T13701.run       T13701 [stat too good] (normal)
+
+Framework failures:
+   .  T2120 [duplicate] (There are multiple tests with this name)
+   .  largeArray [duplicate] (There are multiple tests with this name)
+   .  array001 [duplicate] (There are multiple tests with this name)
+   .  T9220 [duplicate] (There are multiple tests with this name)
+   .  T229 [duplicate] (There are multiple tests with this name)

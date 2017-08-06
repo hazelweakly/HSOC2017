@@ -1,0 +1,832 @@
+TEST: T10858   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    221821688    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    221819144    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    221811192    
+
+
+TEST: T3924    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    50768        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    50768        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    50768        
+
+
+TEST: T3064    |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    68           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    68           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    275819440    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    68           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    275824080    
+
+
+TEST: T3064    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    275822168    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    68           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    275819440    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    68           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    275824080    
+
+
+TEST: T4801    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    375402816    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    375407912    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    375402360    
+
+
+TEST: T1969    |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    63           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    63           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    17794888     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    668179336    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    63           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    17794888     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    668176120    
+
+
+TEST: T1969    |    METRIC: max_bytes_used
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    17794888     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    63           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    17794888     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    668179336    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    63           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    17794888     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    668176120    
+
+
+TEST: T1969    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    668176576    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    63           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    17794888     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    668179336    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    63           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    17794888     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    668176120    
+
+
+TEST: T5030    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    776595952    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    776593248    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    776592792    
+
+
+TEST: parsing001  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    460583384    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    460583384    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    460583384    
+
+
+TEST: T5631    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    1101405752   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    1101409376   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    1101408032   
+
+
+TEST: T783     |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    448982112    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    448982112    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    448984408    
+
+
+TEST: T5321Fun  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    450331624    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    450328864    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    450328408    
+
+
+TEST: T5837    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    52083312     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    52083312     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    52082856     
+
+
+TEST: T5321FD  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    415686280    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    415686280    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    415688576    
+
+
+TEST: T6048    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    93284800     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    93284800     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    93284344     
+
+
+TEST: T3294    |    METRIC: max_bytes_used
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    33074408     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    33074408     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2252533288   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    33076688     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2252529184   
+
+
+TEST: T3294    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    2252529640   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    33074408     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2252533288   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    33076688     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2252529184   
+
+
+TEST: T9020    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    442247184    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    442244456    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    442244000    
+
+
+TEST: T5642    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    901572912    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    901575696    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    901572456    
+
+
+TEST: T9675    |    METRIC: max_bytes_used
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    17398816     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    17398816     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    62           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    659377288    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    17398816     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    62           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    659376832    
+
+
+TEST: T9675    |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    62           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    17398816     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    62           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    659377288    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    17398816     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    62           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    659376832    
+
+
+TEST: T9675    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    659377288    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    17398816     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    62           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    659377288    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    17398816     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    62           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    659376832    
+
+
+TEST: T9872d   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    463918744    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    463918744    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    463918288    
+
+
+TEST: T9961    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    510992216    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    510989512    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    510989056    
+
+
+TEST: T9872a   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    2951503096   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2951503096   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2951503096   
+
+
+TEST: T9233    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    921453280    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    921456976    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    921450992    
+
+
+TEST: T10547   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    33830424     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    33830424     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    33830424     
+
+
+TEST: T9872c   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    3399717592   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    3399717592   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    3399717592   
+
+
+TEST: T9872b   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    3727437584   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    3727437584   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    3727437584   
+
+
+TEST: T12227   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    1054896024   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    1054895960   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    1054895568   
+
+
+TEST: T12234   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    79461248     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    79461248     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    79460792     
+
+
+TEST: T12425   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    130572288    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    130572288    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    130574544    
+
+
+TEST: T13035   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    117154712    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    117154712    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    117154280    
+
+
+TEST: T13056   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    406046656    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    406046656    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    406049792    
+
+
+TEST: T13379   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    420691824    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    420694528    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    420689920    
+
+
+TEST: T12707   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    1163966320   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    1163966320   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    1163971024   
+
+
+TEST: T10370   |    METRIC: max_bytes_used
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    31428664     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    31428664     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    116          
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    31426576     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    116          
+
+
+TEST: T10370   |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    116          
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    31428664     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    116          
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    31426576     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    116          
+
+
+TEST: Naperian  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    48122152     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    48122152     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    48122152     
+
+
+TEST: haddock.base  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    23835522576  
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    23835522576  
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    23835522576  
+
+
+TEST: haddock.Cabal  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    18269359152  
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    18269359152  
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    18269359152  
+
+
+TEST: haddock.compiler  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    52340027672  
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    52340027672  
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    52340027672  
+
+
+TEST: join002  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    2000290832   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2000290832   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2000290832   
+
+
+TEST: join003  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    2000290832   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2000290832   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2000290832   
+
+
+TEST: join004  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    16050744     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    16050744     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    16050744     
+
+
+TEST: join007  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    51048        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    51048        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    51048        
+
+
+TEST: T13701   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    2129029184   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2129031976   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2128568824   
+
+
+TEST: T5835    |    METRIC: max_bytes_used
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    44576        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    44576        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    44576        
+
+
+TEST: T12791   |    METRIC: max_bytes_used
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    44576        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    44576        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    44576        
+
+
+TEST: MultiLayerModules  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    6020916472   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    6020911192   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    6020596176   
+
+
+TEST: T10359   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    450944       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    450944       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    450944       
+
+
+TEST: T3586    |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    18           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    18           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    16102232     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    18           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    16102232     
+
+
+TEST: T3586    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    16102232     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    18           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    16102232     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    18           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    16102232     
+
+
+TEST: T4830    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    98176        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    98176        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    98176        
+
+
+TEST: lazy-bs-alloc  |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    419560       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    419560       
+
+
+TEST: lazy-bs-alloc  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    419560       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    419560       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    419560       
+
+
+TEST: T3738    |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    50528        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    50528        
+
+
+TEST: T3738    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    50528        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    50528        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    50528        
+
+
+TEST: T876     |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    57728        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    57728        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    57728        
+
+
+TEST: T13719   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    5108174304   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    5108174240   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    5108013368   
+
+
+TEST: MethSharing  |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    480098160    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    480098160    
+
+
+TEST: MethSharing  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    480098160    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    480098160    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    480098160    
+
+
+TEST: T5113    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    8058616      
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    8058616      
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    8058616      
+
+
+TEST: T4978    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    10136568     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    10136568     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    10136568     
+
+
+TEST: T5205    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    55608        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    55608        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    55608        
+
+
+TEST: T4474a   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    4831890024   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    4831890024   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    4831890024   
+
+
+TEST: T4474b   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    4831890024   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    4831890024   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    4831890024   
+
+
+TEST: T5237    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    104504       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    104504       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    104504       
+
+
+TEST: T4474c   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    4831890024   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    4831890024   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    4831890024   
+
+
+TEST: T5549    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    5793140160   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    5793140160   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    5793140160   
+
+
+TEST: T5536    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    890357384    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    890357384    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    890357384    
+
+
+TEST: Conversions  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    107792       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    107792       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    107792       
+
+
+TEST: T7436    |    METRIC: max_bytes_used
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    60440        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    60440        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    60440        
+
+
+TEST: T7797    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    480050560    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    480050560    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    480050560    
+
+
+TEST: T7257    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    1414893264   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    1414893264   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    228          
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    1414893264   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    228          
+
+
+TEST: T7257    |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    228          
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    1414893264   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    228          
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    1414893264   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    228          
+
+
+TEST: T5949    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    201056       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    201056       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    201056       
+
+
+TEST: T7954    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    1680051264   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    1680051264   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    1680051264   
+
+
+TEST: T4267    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    41040        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    41040        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    41040        
+
+
+TEST: T7619    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    41040        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    41040        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    41040        
+
+
+TEST: InlineByteArrayAlloc  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    1440041040   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    1440041040   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    1440041040   
+
+
+TEST: InlineArrayAlloc  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    1600041040   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    1600041040   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    1600041040   
+
+
+TEST: InlineCloneArrayAlloc  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    1600041200   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    1600041200   
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    1600041200   
+
+
+TEST: T9203    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    82658000     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    82658000     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    82658000     
+
+
+TEST: T9339    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    50784        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    50784        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    50784        
+
+
+TEST: T8472    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    50840        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    50840        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    50840        
+
+
+TEST: T12996   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    79424        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    79424        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    79424        
+
+
+TEST: T13001   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    50672        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    50672        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    50672        
+
+
+TEST: T12990   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    20041056     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    20041056     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    20041056     
+
+
+TEST: T13218   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    82005568     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    82005568     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    332488       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    82005568     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    332488       
+
+
+TEST: T13218   |    METRIC: max_bytes_used
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    332488       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    82005568     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    332488       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    82005568     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    332488       
+
+
+TEST: DeriveNull  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    112050880    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    112050880    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    112050880    
+
+
+TEST: T13623   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    50936        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    50936        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    50936        
+
+
+TEST: T4334    |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    3            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    3            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    3            
+
+
+TEST: T2762    |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    2            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    2            
+
+
+TEST: space_leak_001  |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    4            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    4            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    442016       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    11315396376  
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    4            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    442016       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    11315396376  
+
+
+TEST: space_leak_001  |    METRIC: max_bytes_used
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    442016       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    4            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    442016       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    11315396376  
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    4            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    442016       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    11315396376  
+
+
+TEST: space_leak_001  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    11315396376  
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    4            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    442016       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    11315396376  
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    4            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    442016       
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    11315396376  
+
+
+TEST: T10678   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    64041520     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    64041520     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    64041520     
+
+
+TEST: T13536a  |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    86720        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    86720        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    86720        
+
+
+TEST: T8766    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    16828080     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    16828080     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    16828080     
+
+
+TEST: T7702    |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    16           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    16           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    15           
+
+
+TEST: T9848    |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    51784        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    51784        
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    51784        
+
+
+TEST: T13191   |    METRIC: bytes allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    185942824    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    185942824    
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    185942824    
+
+
+TEST: T4029    |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    60           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    60           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    17861336     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    60           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    17862056     
+
+
+TEST: T4029    |    METRIC: max_bytes_used
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    17862736     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    60           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    17861336     
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    60           
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    17862056     
+
+
+TEST: T7850    |    METRIC: peak_megabytes_allocated
+-------------------------------
+commit:b10d3f36250d435f9f13079dd9e3ec1ecbb0017f  |    5            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b  |    5            
+commit:fb752133f45f01b27240d7cc6bce2063a015e51b^  |    5            
+
+
